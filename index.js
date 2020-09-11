@@ -1,9 +1,19 @@
-function takeANumber(line, name) {
+// function takeANumber(line, name) {
   
-  line.push(name);
+//   line.push(name);
   
-  return `Welcome, ${name}. You are number ${line.length} in line.`;
+//   return `Welcome, ${name}. You are number ${line.length} in line.`;
   
+// }
+var num = 0;
+
+function takeANumber(line) {
+  
+  num += 1;
+  
+  line.push(num);
+  
+  return `Welcome, you are number ${num} in line.`;
 }
 
 function nowServing(line) {
@@ -15,6 +25,7 @@ function nowServing(line) {
   var result = line.shift();
   return `Currently serving ${result}.`;
 }
+
 
 function currentLine(line) {
   
